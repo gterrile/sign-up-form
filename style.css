@@ -1,0 +1,261 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Photo side */
+
+.photo-side {
+  background-image: url(pexels-pixabay-220201.jpg);
+  background-size: 300%;
+  background-position: center top;
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner {
+  width: 100vw;
+  height: 8rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}  
+
+.banner span {
+  font-size: 7rem;
+  text-align: center;
+  color: white;
+}
+
+
+#banner-text-left {
+  font-size: 2.5rem;
+  font-style: italic;
+  position: relative;
+  top: 25%;
+  right: 0.1rem;
+  font-weight: 700;
+}
+
+#banner-text-right {
+  font-size: 2.25rem;
+  font-style: italic;
+  position: relative;
+  top: -25%;
+  right: 0.1rem;
+  font-weight: 700;
+  
+}
+
+.credits {
+  width: 100%;
+  height: 1.5rem;
+} 
+
+p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: black;
+  font-size: 0.65rem;
+}
+
+/* Form side */
+
+.form-side {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  width: 100%;
+  padding: 2rem;
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding: 0;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  margin: 0;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+form {
+  margin-top: 0.5rem;
+  width: 90%;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.already {
+  margin-top: 1.2rem;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  align-self: baseline;
+  margin-left: 5%;
+  font-weight: 500;
+}
+
+.input-text {
+  height: 2.5rem;
+  width: 91%;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px 1px rgb(220, 220, 220);
+}
+
+button {
+  height: 3rem;
+  width: min(12rem,90%);
+  background-color: rgb(69, 103, 171);
+  color: white;
+  margin: 0 auto;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  box-shadow: 1px 2px 5px 1px rgb(220, 220, 220);
+}
+
+.valid {
+  border: 2px solid rgb(48, 150, 82);
+}
+
+.invalid {
+  border: 2px solid tomato;
+}
+
+.spacer-bottom {
+  height: 5vh;
+}
+
+@media all and (min-width: 769px) {
+  .main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .photo-side {
+    background-color: lightcoral;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+   .banner {
+    width: 100%;
+    height: 8rem;
+    margin-top: 15vh;
+  } 
+  
+   
+  .credits {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 2vh;
+  } 
+
+  .form-side {
+    width: 50vw;
+    height: 100%;
+  }
+  
+  .text {
+    margin-top: 15vh;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .field {
+    margin-top: 1rem;
+    width: 50%;
+  }
+
+  .line-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button {
+    margin-top: 2.5rem;
+  }
+}
+
